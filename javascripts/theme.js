@@ -79,4 +79,11 @@ window.onload = function () {
         }
     }
 
+    // wrap each links of top menu in a div
+    for (var i = 0; i < links.length; i++) {
+        var linkWrapper = document.createElement('div');
+        linkWrapper.appendChild(links[i]);
+        topMenu.appendChild(linkWrapper);
+    }
+
 }
