@@ -1,7 +1,7 @@
 console.log("test");
 
-var topMenu = document.getElementByID('top-menu');
-var header = document.getElementByID('header');
+var topMenu = document.getElementById('top-menu');
+var header = document.getElementById('header');
 
 // wrap topmenu and header in a div to be able to reverse them
 var parent = topMenu.parentNode;
