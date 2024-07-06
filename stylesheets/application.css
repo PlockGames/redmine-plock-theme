@@ -5,6 +5,7 @@
     background: #507AAA no-repeat 2px;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
 }
 /* move the project menu to the right */
 #main-menu {
