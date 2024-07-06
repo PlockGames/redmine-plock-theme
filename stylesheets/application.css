@@ -16,6 +16,10 @@
     right: 0px;
 }
 
+html {
+    background: #f5ead6;
+}
+
 #top-wrapper {
     display: flex;
     flex-direction: column-reverse;
