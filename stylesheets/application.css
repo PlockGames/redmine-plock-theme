@@ -17,7 +17,12 @@
 }
 
 html {
-    background: #f5ead6;
+    background: #efebea;
+}
+
+#content {
+    background: #efebea;
+    padding: 0px;
 }
 
 #top-wrapper {
