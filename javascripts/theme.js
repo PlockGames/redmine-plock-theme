@@ -1,12 +1,15 @@
 console.log("test");
 
-var topMenu = document.getElementById('top-menu');
-var header = document.getElementById('header');
+window.onload = function () {
 
-// wrap topmenu and header in a div to be able to reverse them
-var parent = topMenu.parentNode;
-var wrapper = document.createElement('div');
-wrapper.setAttribute('id', 'top-wrapper');
-parent.replaceChild(wrapper, topMenu);
-wrapper.appendChild(topMenu);
-wrapper.appendChild(header);
+    var topMenu = document.getElementById('top-menu');
+    var header = document.getElementById('header');
+
+    // wrap topmenu and header in a div to be able to reverse them
+    var parent = topMenu.parentNode;
+    var wrapper = document.createElement('div');
+    wrapper.setAttribute('id', 'top-wrapper');
+    parent.replaceChild(wrapper, topMenu);
+    wrapper.appendChild(topMenu);
+    wrapper.appendChild(header);
+}
