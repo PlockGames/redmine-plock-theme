@@ -4,7 +4,7 @@ window.onload = function () {
     var allLinks = document.createElement('a');
     
     console.log(window.location.href);
-    if (window.location.href.indexOf('/') > -1) {
+    if (window.location.href == "https://redmine.plickplock.com/") {
         for (var i = 0; i < allLinks.length; i++) {
             if (allLinks[i].className ==='logout') {
                 window.location.href = '/my/page/';
