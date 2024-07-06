@@ -5,7 +5,7 @@ window.onload = function () {
     // if on home page and connected redirect to my page
     var allLinks = document.createElement('a');
     
-    if (window.location.href.indexOf('home') > -1) {
+    if (window.location.href.indexOf('/') > -1) {
         for (var i = 0; i < allLinks.length; i++) {
             if (allLinks[i].className ==='logout') {
                 window.location.href = '/my/page/';
