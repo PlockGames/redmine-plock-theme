@@ -7,7 +7,7 @@ window.onload = function () {
     
     if (window.location.href.indexOf('home') > -1) {
         for (var i = 0; i < allLinks.length; i++) {
-            if (document.links[i].className =='logout') {
+            if (allLinks[i].className ==='logout') {
                 window.location.href = '/my/page/';
             }   
         }
