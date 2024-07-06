@@ -1,7 +1,7 @@
 window.onload = function () {
 
     // if on home page and connected redirect to my page
-    var allLinks = document.createElement('a');
+    var allLinks = document.getElementsByTagName('a');
     
     if (window.location.href === "https://redmine.plickplock.com/") {
         for (var i = 0; i < allLinks.length; i++) {
