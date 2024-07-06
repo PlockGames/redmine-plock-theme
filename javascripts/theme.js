@@ -39,4 +39,8 @@ window.onload = function () {
     logoLink.appendChild(logo);
     title.parentNode.insertBefore(logoLink, title);
 
+    // remove quick search
+    var quickSearch = document.getElementById('quick-search');
+    quickSearch.parentNode.removeChild(quickSearch);
+
 }
