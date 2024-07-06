@@ -34,7 +34,7 @@ window.onload = function () {
 
     // Add logo before title
     var logo = document.createElement('img');
-    logo.src = 'https://i.imgur.com/WAOVJvT.png';
+    logo.src = 'https://i.imgur.com/fffqMpS.png';
     logo.style.height = '50px';
     logo.style.marginRight = '10px';
     title.parentNode.insertBefore(logo, title);
@@ -62,12 +62,6 @@ window.onload = function () {
     var quickSearch = document.getElementById('quick-search');
     quickSearch.parentNode.removeChild(quickSearch);
 
-    // remove account display for now
-    var account = document.getElementById('account');
-    account.parentNode.removeChild(account);
-    var loggedAs = document.getElementById('loggedas');
-    loggedAs.parentNode.removeChild(loggedAs);
-
     // move top menu inside header
     header.appendChild(topMenu);
     
@@ -86,5 +80,12 @@ window.onload = function () {
         linkWrapper.className = 'tm-item-wrapper';
         topMenu.appendChild(linkWrapper);
     }
+
+    // move account and logged as inside header
+        // remove account display for now
+        var account = document.getElementById('account');
+        var loggedAs = document.getElementById('loggedas');
+        account.parentNode.removeChild(account);
+
 
 }
