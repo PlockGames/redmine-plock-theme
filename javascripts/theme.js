@@ -43,4 +43,7 @@ window.onload = function () {
     var quickSearch = document.getElementById('quick-search');
     quickSearch.parentNode.removeChild(quickSearch);
 
+    // move top menu inside header
+    header.appendChild(topMenu);
+
 }
