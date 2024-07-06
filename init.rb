@@ -1,8 +1,8 @@
 Redmine::Plugin.register :plock_theme do
-  name 'Plock Theme plugin'
-  author 'Author name'
-  description 'This is a plugin for Redmine'
+  name 'Plock Theme'
+  author 'Pebloop'
+  description 'This is a theme plugin for Redmine for plock'
   version '0.0.1'
-  url 'http://example.com/path/to/plugin'
-  author_url 'http://example.com/about'
+  url 'https://github.com/PlockGames/redmine-plock-theme'
+  author_url 'https://github.com/Pebloop'
 end
