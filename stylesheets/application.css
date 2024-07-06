@@ -399,6 +399,6 @@ select[onchange="if (this.value != '') { window.location = this.value; }"]{
 }
 
 .post-it-color-1 {
-    background-image: none;
+    background-image: none !important;
     background-color: #f9f9f9;
 }
