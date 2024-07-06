@@ -4,6 +4,7 @@ window.onload = function () {
 
     var topMenu = document.getElementById('top-menu');
     var header = document.getElementById('header');
+    var title = document.getElementsByTagName('h1')[0];
 
     // wrap topmenu and header in a div to be able to reverse them
     var parent = topMenu.parentNode;
@@ -14,5 +15,12 @@ window.onload = function () {
     wrapper.appendChild(header);
 
     // Change the title
-    document.getElementsByTagName('h1')[0].innerHTML = 'Plock Project Manager';
+    title.innerHTML = 'Plock Project Manager';
+
+    // Add logo before title
+    var logo = document.createElement('img');
+    logo.src = 'images/logo.png';
+    logo.style.height = '50px';
+    logo.style.marginRight = '10px';
+    title.parentNode.insertBefore(logo, title);
 }
