@@ -1,10 +1,9 @@
-console.log("test");
-
 window.onload = function () {
 
     // if on home page and connected redirect to my page
     var allLinks = document.createElement('a');
     
+    console.log(window.location.href);
     if (window.location.href.indexOf('/') > -1) {
         for (var i = 0; i < allLinks.length; i++) {
             if (allLinks[i].className ==='logout') {
