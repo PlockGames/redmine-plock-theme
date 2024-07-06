@@ -19,3 +19,11 @@
     display: flex;
     flex-direction: column-reverse;
 }
+
+#top-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 4px;
+    background-color: transparent;
+}
