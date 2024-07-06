@@ -2,14 +2,19 @@ window.onload = function () {
 
     // if on home page and connected redirect to my page
     var allLinks = document.getElementsByTagName('a');
+    var loggedIn = false;
+
+    for (var i = 0; i < allLinks.length; i++) {
+        console.log(allLinks[i].className);
+        if (allLinks[i].className ==='logout') {
+            loggedIn = true;
+            break;
+        }   
+    }
     
-    if (window.location.href === "https://redmine.plickplock.com/") {
-        for (var i = 0; i < allLinks.length; i++) {
-            console.log(allLinks[i].className);
-            if (allLinks[i].className ==='logout') {
-                window.location.href = '/my/page/';
-            }   
-        }
+    // if on home page and connected redirect to my page
+    if (window.location.href === "https://redmine.plickplock.com/" && loggedIn) {
+        window.location.href = '/my/page/';
     }
 
     var topMenu = document.getElementById('top-menu');
@@ -45,13 +50,23 @@ window.onload = function () {
 
     // wrap logo in a 'a' tag to make it clickable
     var logoLink = document.createElement('a');
-    logoLink.href = '/';
+    if (loggedIn) {
+        logoLink.href = '/my/page/';
+    } else {
+        logoLink.href = '/';
+    }
     logoLink.appendChild(logo);
     title.parentNode.insertBefore(logoLink, title);
 
-    // remove quick search
+    // remove quick search for now
     var quickSearch = document.getElementById('quick-search');
     quickSearch.parentNode.removeChild(quickSearch);
+
+    // remove account display for now
+    var account = document.getElementById('account');
+    account.parentNode.removeChild(account);
+    var loggedAs = document.getElementById('loggedas');
+    loggedAs.parentNode.removeChild(loggedAs);
 
     // move top menu inside header
     header.appendChild(topMenu);
