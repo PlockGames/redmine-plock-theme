@@ -4,7 +4,7 @@
 #header {
     background: #507AAA no-repeat 2px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     padding-bottom: 4px;
 }

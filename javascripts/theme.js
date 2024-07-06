@@ -45,5 +45,13 @@ window.onload = function () {
 
     // move top menu inside header
     header.appendChild(topMenu);
+    
+    // remove some link from top menu
+    var links = topMenu.getElementsByTagName('a');
+    for (var i = 0; i < links.length; i++) {
+        if (links[i].className === 'help' || links[i].className === 'home') {
+            links[i].parentNode.removeChild(links[i]);
+        }
+    }
 
 }
