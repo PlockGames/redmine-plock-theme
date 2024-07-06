@@ -4,7 +4,7 @@
 #header {
     background: #507AAA no-repeat 2px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 /* move the project menu to the right */
 #main-menu {

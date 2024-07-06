@@ -24,4 +24,13 @@ window.onload = function () {
     logo.style.marginRight = '10px';
     title.parentNode.insertBefore(logo, title);
 
+    // wrap title and logo in a div
+    var titleWrapper = document.createElement('div');
+    titleWrapper.setAttribute('id', 'title-wrapper');
+    title.parentNode.replaceChild(titleWrapper, title);
+    titleWrapper.appendChild(logo);
+    titleWrapper.appendChild(title);
+    titleWrapper.style.display = 'flex';
+    titleWrapper.style.alignItems = 'center';
+
 }
