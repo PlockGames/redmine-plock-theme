@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 4px;
 }
 
@@ -26,4 +27,5 @@
     justify-content: space-between;
     padding-top: 4px;
     background: transparent;
+    font: 3em;
 }
