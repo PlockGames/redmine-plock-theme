@@ -2,6 +2,17 @@ console.log("test");
 
 window.onload = function () {
 
+    // if on home page and connected redirect to my page
+    var allLinks = document.createElement('a');
+    
+    }
+    if (window.location.href.indexOf('home') > -1) {
+        for (var i = 0; i < allLinks.length; i++) {
+            if (document.links[i].className =='logout') {
+                window.location.href = '/my/page/';
+            }   
+    }
+
     var topMenu = document.getElementById('top-menu');
     var header = document.getElementById('header');
     var title = document.getElementsByTagName('h1')[0];
