@@ -50,18 +50,18 @@ input:focus {
   text-transform: uppercase;
   border-right: 2px solid #eeeff3;
   padding: 0;
-  background-color: #354051;
+  background-color: #9d1b05;
   line-height: 40px;
 }
 
 #top-menu a {
-  color: #a0abbe;
+  color: #beada0;
   margin-right: 0px;
   font-size: 16px;
 }
 
 #top-menu a:hover {
-  color: #47a3da;
+  color: #da8947;
   text-decoration: none;
 }
 
