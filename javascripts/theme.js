@@ -3,9 +3,9 @@ window.onload = function () {
     // if on home page and connected redirect to my page
     var allLinks = document.createElement('a');
     
-    console.log(window.location.href);
-    if (window.location.href == "https://redmine.plickplock.com/") {
+    if (window.location.href === "https://redmine.plickplock.com/") {
         for (var i = 0; i < allLinks.length; i++) {
+            console.log(allLinks[i].className);
             if (allLinks[i].className ==='logout') {
                 window.location.href = '/my/page/';
             }   
