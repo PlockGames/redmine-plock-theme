@@ -376,7 +376,7 @@ tr.time-entry {
 .redmine-logo{
   margin: auto;
   width: 200px;
-  height: 90px;
+  height: 70px;
   background-image: url('../images/redmine_logo.png');
   background-size: 200px;
   background-repeat: no-repeat;
@@ -387,4 +387,14 @@ select[onchange="if (this.value != '') { window.location = this.value; }"]{
   position: fixed;
   top: 17px;
   right: 10px;
+}
+
+/*=========== POST-IT ============*/
+.post-it {
+  background: #f6f6f6;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
