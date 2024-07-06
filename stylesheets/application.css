@@ -376,7 +376,7 @@ tr.time-entry {
 .redmine-logo{
   margin: auto;
   width: 200px;
-  height: 45px;
+  height: 100px;
   background-image: url('../images/redmine_logo.png');
   background-size: 200px;
   background-repeat: no-repeat;
