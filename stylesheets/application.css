@@ -6,8 +6,9 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    height: auto;
+    padding-bottom: 4;
 }
+
 /* move the project menu to the right */
 #main-menu {
     left: auto;
