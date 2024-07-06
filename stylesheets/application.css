@@ -397,3 +397,8 @@ select[onchange="if (this.value != '') { window.location = this.value; }"]{
 .post-it {
   border-radius: 3px;
 }
+
+.post-it-color-1 {
+    background-image: none;
+    background-color: #f9f9f9;
+}
