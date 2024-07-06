@@ -83,6 +83,7 @@ window.onload = function () {
     for (var i = 0; i < links.length; i++) {
         var linkWrapper = document.createElement('div');
         linkWrapper.appendChild(links[i]);
+        linkWrapper.className = 'tm-item-wrapper';
         topMenu.appendChild(linkWrapper);
     }
 

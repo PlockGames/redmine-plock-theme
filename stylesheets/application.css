@@ -27,5 +27,9 @@
     justify-content: space-between;
     padding-top: 4px;
     background: transparent;
-    font: 5em;
+    font-size: 5em;
+}
+
+.tm-item-wrapper {
+    padding: 0px 10px;
 }
