@@ -19,7 +19,7 @@ window.onload = function () {
 
     // Add logo before title
     var logo = document.createElement('img');
-    logo.src = '../images/logo.png';
+    logo.src = 'logo.png';
     logo.style.height = '50px';
     logo.style.marginRight = '10px';
     title.parentNode.insertBefore(logo, title);
