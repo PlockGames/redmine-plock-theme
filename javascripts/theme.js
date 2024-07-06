@@ -12,4 +12,7 @@ window.onload = function () {
     parent.replaceChild(wrapper, topMenu);
     wrapper.appendChild(topMenu);
     wrapper.appendChild(header);
+
+    // Change the title
+    document.getElementsByTagName('h1')[0].innerHTML = 'Plock Project Manager';
 }
