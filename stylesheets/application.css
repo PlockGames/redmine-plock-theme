@@ -3,7 +3,8 @@
 /* add a logo in the header */
 #header {
     background: #507AAA no-repeat 2px;
-    padding-left: 86px;
+    display: flex;
+    flex-direction: row;
 }
 /* move the project menu to the right */
 #main-menu {

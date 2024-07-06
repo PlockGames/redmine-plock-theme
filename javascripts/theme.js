@@ -23,4 +23,5 @@ window.onload = function () {
     logo.style.height = '50px';
     logo.style.marginRight = '10px';
     title.parentNode.insertBefore(logo, title);
+
 }
