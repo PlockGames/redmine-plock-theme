@@ -2,7 +2,7 @@
 @import url(../../../stylesheets/application.css);
 /* add a logo in the header */
 #header {
-    background: #507AAA url (../ images / logo.png) no-repeat 2px;
+    background: #507AAA url (../images/logo.png) no-repeat 2px;
     padding-left: 86px;
 }
 /* move the project menu to the right */
