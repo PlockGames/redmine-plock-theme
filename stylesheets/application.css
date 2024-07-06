@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding-bottom: 4;
+    padding-bottom: 4px;
 }
 
 /* move the project menu to the right */
