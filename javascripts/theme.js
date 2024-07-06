@@ -23,12 +23,6 @@ window.onload = function () {
     logo.style.height = '50px';
     logo.style.marginRight = '10px';
     title.parentNode.insertBefore(logo, title);
-    
-    // wrap logo in a 'a' tag to make it clickable
-    var logoLink = document.createElement('a');
-    logoLink.href = '/';
-    logoLink.appendChild(logo);
-    title.parentNode.insertBefore(logoLink, title);
 
     // wrap title and logo in a div
     var titleWrapper = document.createElement('div');
@@ -38,5 +32,11 @@ window.onload = function () {
     titleWrapper.appendChild(title);
     titleWrapper.style.display = 'flex';
     titleWrapper.style.alignItems = 'center';
+
+    // wrap logo in a 'a' tag to make it clickable
+    var logoLink = document.createElement('a');
+    logoLink.href = '/';
+    logoLink.appendChild(logo);
+    title.parentNode.insertBefore(logoLink, title);
 
 }
