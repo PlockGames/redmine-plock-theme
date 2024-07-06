@@ -10,6 +10,7 @@ window.onload = function () {
             if (document.links[i].className =='logout') {
                 window.location.href = '/my/page/';
             }   
+        }
     }
 
     var topMenu = document.getElementById('top-menu');
