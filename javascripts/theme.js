@@ -96,6 +96,10 @@
     var title = document.getElementsByTagName('h1')[0];
     title.parentNode.removeChild(title);
 
+    // scale down header
+    var header = document.getElementById('header');
+    header.style.height = '33px';
+
   })
   $( document ).on( "click", "#main, #header", function() {
     $( "#top-menu" ).removeClass( "open" );
