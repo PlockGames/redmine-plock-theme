@@ -181,6 +181,7 @@
           addToSprintItem.addEventListener('click', function() {
             alert('Add to Sprint');
           });
+          menu.appendChild(addToSprintItem);
 
         });
       }
