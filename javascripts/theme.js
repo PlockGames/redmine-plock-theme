@@ -166,10 +166,7 @@
         var currentTask = tasks[i];
         tasks[i].addEventListener('contextmenu', function(e) {
           e.preventDefault();
-          console.log(e.target);
-          console.log(currentTask);
-
-          var pbiId = e.target.id.split('_')[1];
+          var pbiId = currentTask.target.id.split('_')[1];
           
           // create the menu
           if (document.getElementById('right-click-menu')) {
