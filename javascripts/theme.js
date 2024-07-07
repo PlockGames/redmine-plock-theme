@@ -187,6 +187,8 @@
           addToSprintItem.innerText = 'Add to Sprint';
           addToSprintItem.href = '/scrum/' + pbiId + '/move_to_last_sprint';
           addToSprintItem.setAttribute('data-method', 'post');
+          addToSprintItem.setAttribute('data-remote', 'true');
+          addToSprintItem.setAttribute('rel', 'nofollow');
           menu.appendChild(addToSprintItem);
 
         });
