@@ -186,7 +186,7 @@
           addToSprintItem.className = 'right-click-menu-item';
           addToSprintItem.innerText = 'Add to Sprint';
           addToSprintItem.href = '/scrum/' + pbiId + '/move_to_last_sprint';
-          addToSprintItem.method = 'post';
+          addToSprintItem.setAttribute('data-method', 'post');
           menu.appendChild(addToSprintItem);
 
         });
