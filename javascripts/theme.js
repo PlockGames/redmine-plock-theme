@@ -2,7 +2,7 @@
 
   'use strict';
   /* set true to enable static sidebar */
-  var activeStaticSidebar = true;
+  var activeStaticSidebar = false;
 
   function classReg( className ) {
     return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
