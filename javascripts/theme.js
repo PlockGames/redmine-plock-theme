@@ -163,10 +163,11 @@
     // add right click event to each task
     for (var i = 0; i < tasks.length; i++) {
       if (tasks[i].id.includes('pbi_')) {
+        var currentTask = tasks[i];
         tasks[i].addEventListener('contextmenu', function(e) {
           e.preventDefault();
           console.log(e.target);
-          console.log(tasks[i]);
+          console.log(currentTask);
 
           var pbiId = e.target.id.split('_')[1];
           
