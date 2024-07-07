@@ -132,4 +132,11 @@
       }
   }
   removeRule();
+
+
+  // PLOCK MODIFICATIONS
+
+  // remove header
+  var title = document.getElementsByTagName('h1')[0];
+  title.remove();
 })( window );
