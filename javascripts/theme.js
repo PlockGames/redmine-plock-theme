@@ -159,7 +159,15 @@
   function setupRightClickMenu() {
     // get all tasks
     var tasks = document.getElementsByClassName('post-it');
-    console.log(tasks);
+
+    // add right click event to each task
+    for (var i = 0; i < tasks.length; i++) {
+      tasks[i].addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        console.log('right click');
+        console.log(e);
+      });
+    }
   }
 
   $(document).ready(removeHeader);
