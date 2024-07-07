@@ -166,7 +166,7 @@
         tasks[i].addEventListener('contextmenu', function(e) {
           e.preventDefault();
           console.log(e.target);
-          console.log(tasks);
+          console.log(tasks[i]);
 
           var pbiId = e.target.id.split('_')[1];
           
