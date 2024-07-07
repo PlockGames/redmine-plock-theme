@@ -159,6 +159,9 @@
   function setupRightClickMenu() {
     // get all tasks
     var tasks = document.getElementsByClassName('post-it');
+    task = tasks.filter(function(task) {
+      return task.id.contains('pbi_');
+    });
 
     // add right click event to each task
     for (var i = 0; i < tasks.length; i++) {
