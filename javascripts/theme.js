@@ -169,6 +169,7 @@
           // create the menu
           var menu = document.createElement('div');
           menu.className = 'right-click-menu';
+          menu.id = 'right-click-menu';
           menu.style.position = 'absolute';
           menu.style.top = e.clientY + 'px';
           menu.style.left = e.clientX + 'px';
@@ -186,6 +187,13 @@
         });
       }
     }
+
+    $(document).bind("click", function(event) {
+      var menu = document.getElementById('right-click-menu');
+      if (menu) {
+        menu.parentNode.removeChild(menu);
+      }
+    });
   }
 
   $(document).ready(removeHeader);
