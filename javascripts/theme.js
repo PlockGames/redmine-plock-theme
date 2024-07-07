@@ -165,7 +165,7 @@
       if (tasks[i].id.includes('pbi_')) {
         tasks[i].addEventListener('contextmenu', function(e) {
           e.preventDefault();
-          var pbiId = this.parentNode.parentNode.id.split('_')[1];
+          var pbiId = tasks[i].id.split('_')[1];
           
           // create the menu
           if (document.getElementById('right-click-menu')) {
