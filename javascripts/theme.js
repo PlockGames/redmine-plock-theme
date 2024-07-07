@@ -165,8 +165,22 @@
       if (tasks[i].id.includes('pbi_')) {
         tasks[i].addEventListener('contextmenu', function(e) {
           e.preventDefault();
-          console.log('right click');
-          console.log(e);
+          
+          // create the menu
+          var menu = document.createElement('div');
+          menu.className = 'right-click-menu';
+          menu.style.position = 'absolute';
+          menu.style.top = e.clientY + 'px';
+          menu.style.left = e.clientX + 'px';
+
+          // create the menu items
+          var addToSprintItem = document.createElement('div');
+          addToSprintItem.className = 'right-click-menu-item';
+          addToSprintItem.innerText = 'Add to Sprint';
+          addToSprintItem.addEventListener('click', function() {
+            alert('Add to Sprint');
+          });
+
         });
       }
     }
