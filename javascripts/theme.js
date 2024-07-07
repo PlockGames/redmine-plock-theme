@@ -149,6 +149,6 @@
     header.style.paddingTop = '33px';
   }
 
-  $document.ready(removeHeader);
+  $(document).ready(removeHeader);
 
 })( window );
