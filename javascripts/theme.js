@@ -165,12 +165,13 @@
       if (tasks[i].id.includes('pbi_')) {
         tasks[i].addEventListener('contextmenu', function(e) {
           e.preventDefault();
+          var pbiId = this.parentNode.parentNode.id.split('_')[1];
           
           // create the menu
           if (document.getElementById('right-click-menu')) {
             document.getElementById('right-click-menu').parentNode.removeChild(document.getElementById('right-click-menu'));
           }
-          
+
           var menu = document.createElement('div');
           menu.className = 'right-click-menu';
           menu.id = 'right-click-menu';
@@ -180,12 +181,11 @@
           document.body.appendChild(menu);
 
           // create the menu items
-          var addToSprintItem = document.createElement('div');
+          var addToSprintItem = document.createElement('a');
           addToSprintItem.className = 'right-click-menu-item';
           addToSprintItem.innerText = 'Add to Sprint';
-          addToSprintItem.addEventListener('click', function() {
-            alert('Add to Sprint');
-          });
+          addToSprintItem.href = '/scrum/' + pbiId + '/move_to_last_sprint';
+          addToSprintItem.method = 'post';
           menu.appendChild(addToSprintItem);
 
         });
