@@ -163,5 +163,6 @@
   }
 
   $(document).ready(removeHeader);
+  $(document).ready(setupRightClickMenu);
 
 })( window );
