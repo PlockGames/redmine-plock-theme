@@ -155,6 +155,13 @@
     }
   }
 
+  // setup right click menu in backlog
+  function setupRightClickMenu() {
+    // get all tasks
+    var tasks = document.getElementsByClassName('post-it');
+    console.log(tasks);
+  }
+
   $(document).ready(removeHeader);
 
 })( window );
