@@ -391,7 +391,17 @@ select[onchange="if (this.value != '') { window.location = this.value; }"]{
 
 /*=========== POST-IT ============*/
 .post-it-rotation-3 {
-  -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.post-it-small-rotation-1 {
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 .post-it {
