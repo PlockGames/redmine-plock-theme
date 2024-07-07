@@ -89,6 +89,13 @@
       $( "#top-menu" ).css( "transition", "none" );
       $( "#quick-search" ).css( "transition", "none" );
     }
+
+    // PLOCK MODIFICATIONS
+
+    // Remove the title
+    var title = document.getElementsByTagName('h1')[0];
+    title.parentNode.removeChild(title);
+
   })
   $( document ).on( "click", "#main, #header", function() {
     $( "#top-menu" ).removeClass( "open" );
@@ -136,7 +143,4 @@
 
   // PLOCK MODIFICATIONS
 
-  // remove header
-  var title = document.getElementsByTagName('h1')[0];
-  title.parentNode.removeChild(title);
 })( window );
