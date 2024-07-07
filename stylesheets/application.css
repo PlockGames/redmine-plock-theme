@@ -79,7 +79,7 @@ input:focus {
 #top-menu > ul{
   margin-top: 20px;
   padding: 0 0 20px 20px;
-  border-bottom: 3px solid #2d3747;
+  border-bottom: 3px solid #4d0b00;
 }
 #top-menu, .menu-push-toright, body, #menu, #quick-search {
   -webkit-transition: all 0.3s ease;
