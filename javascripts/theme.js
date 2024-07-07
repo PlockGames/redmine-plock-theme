@@ -167,6 +167,10 @@
           e.preventDefault();
           
           // create the menu
+          if (document.getElementById('right-click-menu')) {
+            document.getElementById('right-click-menu').parentNode.removeChild(document.getElementById('right-click-menu'));
+          }
+          
           var menu = document.createElement('div');
           menu.className = 'right-click-menu';
           menu.id = 'right-click-menu';
