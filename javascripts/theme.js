@@ -159,17 +159,16 @@
   function setupRightClickMenu() {
     // get all tasks
     var tasks = document.getElementsByClassName('post-it');
-    task = tasks.filter(function(task) {
-      return task.id.contains('pbi_');
-    });
 
     // add right click event to each task
     for (var i = 0; i < tasks.length; i++) {
-      tasks[i].addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-        console.log('right click');
-        console.log(e);
-      });
+      if (tasks[i].id.contains('pbi_')) {
+        tasks[i].addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+          console.log('right click');
+          console.log(e);
+        });
+      }
     }
   }
 
