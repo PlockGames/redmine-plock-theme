@@ -162,7 +162,7 @@
 
     // add right click event to each task
     for (var i = 0; i < tasks.length; i++) {
-      if (tasks[i].id.contains('pbi_')) {
+      if (tasks[i].id.includes('pbi_')) {
         tasks[i].addEventListener('contextmenu', function(e) {
           e.preventDefault();
           console.log('right click');
