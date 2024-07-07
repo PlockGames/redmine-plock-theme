@@ -138,5 +138,5 @@
 
   // remove header
   var title = document.getElementsByTagName('h1')[0];
-  title.remove();
+  title.parentNode.removeChild(title);
 })( window );
