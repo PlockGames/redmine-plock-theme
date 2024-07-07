@@ -165,7 +165,9 @@
       if (tasks[i].id.includes('pbi_')) {
         tasks[i].addEventListener('contextmenu', function(e) {
           e.preventDefault();
-          console.log(e.target.id);
+          console.log(e.target);
+          console.log(tasks);
+
           var pbiId = e.target.id.split('_')[1];
           
           // create the menu
