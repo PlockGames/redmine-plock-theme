@@ -70,6 +70,7 @@ input:focus {
   margin-right: 0.5em;
   color: #999;
   font-size: 15px;
+  border-bottom: #4d0b00;
 }
 
 #top-menu ul li {
