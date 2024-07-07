@@ -149,7 +149,7 @@
     header.style.minHeight = '0px';
 
     if (mainMenu) {
-      header.style.paddingTop = '60px';
+      header.style.paddingTop = '80px';
     } else {
       header.style.paddingTop = '33px';
     }
