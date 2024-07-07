@@ -172,6 +172,7 @@
           menu.style.position = 'absolute';
           menu.style.top = e.clientY + 'px';
           menu.style.left = e.clientX + 'px';
+          document.body.appendChild(menu);
 
           // create the menu items
           var addToSprintItem = document.createElement('div');
