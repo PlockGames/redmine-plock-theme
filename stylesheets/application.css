@@ -239,10 +239,10 @@ label[for="q"]{
 }
 #main-menu li a.selected,
 #main-menu li a.selected:hover {
-  border-bottom: 3px solid #40aff8;
+  border-bottom: 3px solid #4d0b00;
 }
 #main-menu li a:hover {
-  border-bottom: 3px solid #40aff8;
+  border-bottom: 3px solid #4d0b00;
 }
 #main-menu li a {
   color: #848f9f;
