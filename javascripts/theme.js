@@ -145,8 +145,14 @@
 
     // scale down header
     var header = document.getElementById('header');
+    var mainMenu = document.getElementById('main-menu');
     header.style.minHeight = '0px';
-    header.style.paddingTop = '33px';
+
+    if (mainMenu) {
+      header.style.paddingTop = '60px';
+    } else {
+      header.style.paddingTop = '33px';
+    }
   }
 
   $(document).ready(removeHeader);
