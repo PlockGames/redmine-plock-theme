@@ -98,7 +98,7 @@
 
     // scale down header
     var header = document.getElementById('header');
-    header.style.height = '33px';
+    header.style.minHeight = '33px';
 
   })
   $( document ).on( "click", "#main, #header", function() {
